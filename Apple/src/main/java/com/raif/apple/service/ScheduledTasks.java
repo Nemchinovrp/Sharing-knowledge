@@ -8,9 +8,6 @@ public class ScheduledTasks {
 
     @Scheduled(fixedRate = 5000)
     public void reportCurrentTime() {
-        System.out.println(Thread.currentThread().getName());
-        System.out.println(Thread.currentThread().getState().name());
-        System.out.println(Thread.currentThread().getThreadGroup().getName());
         System.out.println("The time is now +  dateFormat.format(new Date())");
     }
 }
